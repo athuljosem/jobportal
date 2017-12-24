@@ -302,14 +302,17 @@ echo "Record inserted";
 }
 if($type=="College")
 {
+//Try inserting the multi selection dropbox in this section
 ?>
        <form name="college" method="post">
 
 <h3>College Registration Form</h3>
 
+
        </form>
 
-<?php } 
+<?php 
+} 
 if($type=="Organization")
 {
 ?>
