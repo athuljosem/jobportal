@@ -9,24 +9,28 @@ if ($row = mysqli_fetch_array($type)) {
     
 //header ("Location:db_conn.php");
     echo 'Successfully entered :';
-if ($row[0] =='admin')
+if ($row[0] =='admin'){
         echo 'Admin';
-        elseif ($row[0]=='employee') {
+         header ("Location:adminhome.php");
+}
+        elseif ($row[0]=='employee')
+            {
             echo 'Employee';
             header ("Location:studenthome.php");
             
 }
 elseif ($row[0]=='organisation') {
     echo 'Organization';
-    
+    header ("Location:organizationhome.php");
 }
 elseif ($row[0]=='college') {
     echo 'College';
+     header ("Location:collegehome.php");
 }
 }
 else{
     echo 'Wrong username or Password';
-    header ("Location:login.php");
+    //header ("Location:login.php");
 }?>
 <?//php include './header.php'; ?>
 <?//php include './footer.php'; ?>
