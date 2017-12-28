@@ -29,8 +29,8 @@ elseif ($row[0]=='college') {
 }
 }
 else{
-    echo 'Wrong username or Password';
-    //header ("Location:login.php");
+    echo 'Wrong username or Password';//Find How to show this as pop-up while only entering the user name and password
+    header ("Location:login.php");
 }?>
 <?//php include './header.php'; ?>
 <?//php include './footer.php'; ?>
